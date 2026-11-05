@@ -27,5 +27,8 @@ class Stack:
             return self.array[self.top]
         else: pass
 
-
-
+    def __str__(self):
+        if not self.is_empty():
+            return str(self.array[:self.top + 1])
+        else:
+            return "[]"
